@@ -28,3 +28,17 @@ def get_roster_emails(roster, emails_db, scores=False):
     return roster_emails
 
 
+def output_roster(fn, roster_emails, scores=False):
+    """Writes roster to a file
+    """
+    with open(fn, 'w') as f:
+        if scores:
+            for (n, person) in enumerate(roster_emails[0]):
+                f.write("%s\t\t%s\t\t%s\n" % (person,
+                                              ",".join(roster_emails[0][person]),
+                                              roster_emails[1][n]))
+        else:
+            for person in enumerate(roster_emails):
+                f.write("%s\t\t%s\n" % (person,
+                                        ",".join(roster_emails[0][person]))
+                
