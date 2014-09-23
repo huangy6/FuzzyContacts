@@ -40,5 +40,5 @@ def output_roster(fn, roster_emails, scores=False):
         else:
             for person in enumerate(roster_emails):
                 f.write("%s\t\t%s\n" % (person,
-                                        ",".join(roster_emails[0][person]))
+                                        ",".join(roster_emails[0][person])))
                 
