@@ -19,4 +19,4 @@ workon fuzzyContacts
 ````
 
 ##Author
-[Yidi Huang](huangy6@yahoo.com)
+[Yidi Huang](mailto:huangy6@yahoo.com)
